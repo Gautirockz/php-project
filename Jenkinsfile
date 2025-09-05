@@ -1,9 +1,9 @@
 pipeline {
     agent any
     stages{
-        stage('git cloned'){
+        stage('Git clone'){
             steps{
-                https://github.com/Gautirockz/php-project.git', branch: "master"
+              git branch: 'master', url: 'https://github.com/Gautirockz/php-project.git
                }
         }
         stage('Build docker image'){
