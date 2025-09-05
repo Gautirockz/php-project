@@ -4,8 +4,7 @@ pipeline {
         stage('git cloned'){
             steps{
                 https://github.com/Gautirockz/php-project.git', branch: "master"
-              
-            }
+               }
         }
         stage('Build docker image'){
             steps{
